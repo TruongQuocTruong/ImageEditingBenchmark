@@ -49,7 +49,7 @@ def main():
     parser.add_argument(
         "--mode",
         choices=["normal", "ratio"],
-        default="normal",
+        default="ratio",
         help="Overall calculation mode: 'normal' = simple mean of per-metric accuracies, "
              "'ratio' = weighted by sample count (total_correct / total_samples)",
     )
