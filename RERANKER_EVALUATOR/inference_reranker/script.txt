@@ -1,0 +1,14 @@
+1. Link subset benchmark & edited subset benchmark:
+    + training_samples_ver01: https://drive.google.com/file/d/1vCU_DBC94DadolrmghyDBNdvj0S4OKsE/view?usp=drive_link
+    + edited_training_samples_ver01: https://drive.google.com/file/d/1q6UaDmGiD7_PiXf2fyYBW0PKqqXhDNRa/view?usp=drive_link
+    + Move to folder training_samples_creation
+
+
+2. Inferring on valset
+    - Change CONFIG in infer_val.py
+	+ LORA_PATH  # Checkpoint of fine-tuned model
+	+ VAL_JSONL  # Path of valset in training samples
+
+
+3. Calculating acc, f1-score for each metrics
+    - python acc_each_metric.py Path/to/the/inference/result/JSON/file 

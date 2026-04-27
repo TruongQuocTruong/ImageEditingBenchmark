@@ -8,15 +8,15 @@ from peft import PeftModel
 from qwen_vl_utils import process_vision_info
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from datetime import datetime
+now = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # --- 1. CẤU HÌNH ---
 METRIC_NAME = "All_Metrics_Fidelity"
-MODEL_PATH = "/datastore/raccoon/truongtq/MODELS/Qwen3-VL-Reranker-8B"
-LORA_PATH  = "/datastore/raccoon/truongtq/TRAINING_LORA_VLRERANKER/outputs/lora_fidelity_lorarank128_lr2e-5"
-VAL_JSONL  = "/datastore/raccoon/truongtq/USER_STUDY/ScoringAndRanking/user_study_reranker_test.jsonl"
+MODEL_PATH = "MODELS/Qwen3-VL-Reranker-8B"
+LORA_PATH  = "outputs/lora_fidelity_lorarank128_lr2e-5"
+VAL_JSONL  = "training_data/all_metrics_pairwise_val.jsonl"
 
-now = datetime.now().strftime("%Y%m%d_%H%M%S")
-OUTPUT_FILE = f"/datastore/raccoon/truongtq/TRAINING_LORA_VLRERANKER/inference_reranker/results_infer/val_set/{METRIC_NAME}_lorarank64_8B_{now}.json"
+OUTPUT_FILE = f"inference_reranker/results_infer/val_set/{METRIC_NAME}_{now}.json"
 
 os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 device = "cuda" if torch.cuda.is_available() else "cpu"
