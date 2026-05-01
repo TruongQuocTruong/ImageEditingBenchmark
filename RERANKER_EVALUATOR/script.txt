@@ -5,7 +5,7 @@
 - download subset benchmark và edited subset benchmark:
     + training_samples_ver01: https://drive.google.com/file/d/1vCU_DBC94DadolrmghyDBNdvj0S4OKsE/view?usp=drive_link
     + edited_training_samples_ver01: https://drive.google.com/file/d/1q6UaDmGiD7_PiXf2fyYBW0PKqqXhDNRa/view?usp=drive_link
-    + Move to folder training_samples_creation
+    + move to folder training_samples_creation
 
 - run file training_samples_all_metrics_creation.py to create training samples
 
