@@ -10,7 +10,7 @@ BENCHMARK_ROOT = os.path.join(BASE_DIR, "training_samples_creation", "training_s
 EDITED_ROOT    = os.path.join(BASE_DIR, "training_samples_creation", "edited_training_samples_ver01")
 
 # Thư mục chứa các file đã qua lọc ĐỒNG THUẬN (Consensus)
-INPUT_DIR      = os.path.join(BASE_DIR, "training_samples_creation", "training_samples_groundtruth")
+INPUT_DIR      = os.path.join(BASE_DIR, "training_samples_creation", "revise_training_samples_groundtruth")
 OUTPUT_DIR     = os.path.join(BASE_DIR, "training_datasets")
 
 # Danh sách các file metrics đã được tinh khiết hóa (Consensus)
